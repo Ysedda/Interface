@@ -7,7 +7,7 @@ abstract class Highway
     protected int $nbLane;
     protected int $maxSpeed;
 
-    abstract function addVehicle(object $Vehicle);
+    abstract function addVehicle(Vehicle $Vehicle);
 
     public function getCurrentVehicles(): array
     {
