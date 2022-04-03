@@ -3,8 +3,11 @@ require_once 'HighWay.php';
 
 final class ResidentialWay extends Highway
 {
-    protected int $nbLane = 2;
-    protected int $maxSpeed = 50;
+    public function __construct()
+    {
+        $this->nbLane = 2;
+        $this->maxSpeed = 50;
+    }
 
     public function addVehicle(Vehicle $vehicle):void
     {

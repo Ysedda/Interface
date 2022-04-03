@@ -2,10 +2,10 @@
 
 require_once 'classes.php';
 
-$motor = new MotorWay;
 $bike = new Bike('blue', 2);
 $skateboard = new Skateboard('black', 2);
 $car = new Car('red', 4);
+$motor = new MotorWay;
 $motor->addVehicle($bike);
 $motor->addVehicle($skateboard);
 $motor->addVehicle($car);

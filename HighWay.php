@@ -7,6 +7,12 @@ abstract class Highway
     protected int $nbLane;
     protected int $maxSpeed;
 
+    public function __construct(int $nbLane, int $maxSpeed) 
+    {
+        $this->nbLane = $nbLane;
+        $this->maxSpeed = $maxSpeed;
+    }
+
     abstract function addVehicle(Vehicle $Vehicle);
 
     public function getCurrentVehicles(): array
